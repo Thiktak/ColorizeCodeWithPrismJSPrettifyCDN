@@ -1,7 +1,7 @@
 Colorize Code With PrismJS Prettify CDN
 =======================================
 
-A wikimedia extension to add beautiful syntax highlighting with the power of PrismJS (http://prismjs.com)
+A wikimedia extension to add a beautiful syntax highlighting engine with the power of PrismJS (http://prismjs.com)
 
 
 Installation
