@@ -1,0 +1,50 @@
+{
+  "name": "ColorizeCodeWithPrismJSPrettifyCDN",
+  "version": "0.0.1",
+  "author": [
+    "OLIVARES Georges"
+  ],
+  "url": "https://github.com/thiktak/ColorizeCodeWithPrismJSPrettifyCDN",
+  "descriptionmsg": "ColorizeCodeWithPrismJSPrettifyCDN-desc",
+  "license-name": "MIT",
+  "type": "parserhook",
+  "AutoloadClasses": {
+    "ColorizeCodeWithPrismJSPrettifyCDNHooks": "ColorizeCodeWithPrismJSPrettifyCDN.hooks.php"
+  },
+  "config": {
+    "wgColorizeCodeWithPrismJSPrettifyCDNSkin": "default",
+    "wgColorizeCodeWithPrismJSPrettifyCDNAutoload": true,
+    "wgColorizeCodeWithPrismJSPrettifyCDNLanguages": "*",
+    "wgColorizeCodeWithPrismJSPrettifyCDNTag": "source"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": [
+      "ColorizeCodeWithPrismJSPrettifyCDNHooks::onColorize"
+    ],
+    "BeforePageDisplay": [
+      "ColorizeCodeWithPrismJSPrettifyCDNHooks::beforePageDisplay"
+    ],
+    "MakeGlobalVariablesScript": [
+      "ColorizeCodeWithPrismJSPrettifyCDNHooks::makeGlobalVariablesScript"
+    ]
+  },
+  "MessagesDirs": {
+    "ColorizeCodeWithPrismJSPrettifyCDN": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "ext.ColorizeCodeWithPrismJSPrettifyCDN": {
+      "scripts": [
+        "modules/ext.ColorizeCodeWithPrismJSPrettifyCDN.js"
+      ],
+      "messages": [],
+      "dependencies": []
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteExtPath": "ColorizeCodeWithPrismJSPrettifyCDN"
+  },
+  "manifest_version": 1
+}
